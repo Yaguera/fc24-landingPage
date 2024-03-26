@@ -1,12 +1,12 @@
 import React from 'react'
-import { logo } from '../../assets/img'
+import { hamburger, logo } from '../../assets/img'
 import { useState } from 'react'
 
-const Header = () => {
-  const [nav, setNav] = useState(false);
+const Header = () => { 
   return (
-    <header className='bg-[#151516] p-4'>
-        <div className="logo"><img src={logo} alt="logo Fc 24" /></div>
+    <header className='bg-[#151516] p-4 flex'>
+        <div id='hamburger'><img src={hamburger} alt="menu Hamburger" /></div>
+        <div id="logo"><img src={logo} alt="logo Fc 24" /></div>
     </header>
   )
 }
